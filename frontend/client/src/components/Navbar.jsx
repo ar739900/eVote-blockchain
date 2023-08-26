@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 import { Link } from "react-router-dom";
+import Logo from "./Logo";
 const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
@@ -18,27 +19,7 @@ const Navbar = () => {
       <Container maxW="container.xl">
         <Flex justifyContent="space-between" alignItems="center" p={4}>
           <Link to={"/"}>
-            <Button
-              fontWeight="700"
-              variant={"outline"}
-              color={"#181818"}
-              border={"2px solid #181818"}
-              boxShadow={"4px 4px #181818"}
-              _hover={{
-                opacity: "0.9",
-                boxShadow: "none",
-              }}
-              _dark={{
-                color: "#f3f2f2",
-                border: "2px solid #f2f2f2",
-                boxShadow: "4px 4px #f2f2f2",
-                _hover: {
-                  boxShadow: "none",
-                },
-              }}
-            >
-              TrustBallot
-            </Button>
+            <Logo />
           </Link>
 
           <Box>

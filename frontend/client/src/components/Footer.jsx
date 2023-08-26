@@ -18,7 +18,7 @@ function Footer(props) {
         color={"#2D3748"}
         _dark={{ color: "#a1a1aa" }}
       >
-        Proudly made in &#x1F1EE;&#x1F1F3; by Ritik Kumar
+        Proudly made in &#x1F1EE;&#x1F1F3; by Amit
       </Text>
       <Flex
         columnGap={2}

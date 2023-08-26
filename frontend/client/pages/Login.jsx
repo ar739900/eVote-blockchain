@@ -10,7 +10,10 @@ import {
   Heading,
   Text,
   useColorModeValue,
+  Image,
+  Divider,
 } from "@chakra-ui/react";
+import wallet from "../src/assets/wallet.png";
 
 export default function Login() {
   return (
@@ -33,6 +36,15 @@ export default function Login() {
           p={8}
         >
           <Stack spacing={4}>
+            <Button>
+              <Image src={wallet} width={6} mr={4} />
+              <Text>Login with Metamask</Text>
+            </Button>
+            <Flex alignItems={"center"} columnGap={2}>
+              <Divider />
+              <Text>or</Text>
+              <Divider />
+            </Flex>
             <FormControl id="email">
               <FormLabel>Email address</FormLabel>
               <Input type="email" />
